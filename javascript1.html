@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function add()
+        {
+           let x= parseInt( document.getElementById("no1").value);
+          let y=parseInt( document.getElementById("no2").value);
+          let ans= x+y;
+          
+          let divans=document.getElementById("ans");
+           //alert("ans....."+ans);
+          
+           divans.innerHTML=ans;
+      
+        }
+        function sub()
+        {
+           let x= parseInt( document.getElementById("no1").value);
+          let y=parseInt( document.getElementById("no2").value);
+          let ans= x-y;
+          
+          let divans=document.getElementById("ans");
+           //alert("ans....."+ans);
+          
+           divans.innerHTML=ans;
+      
+        }
+        function mult()
+        {
+           let x= parseInt( document.getElementById("no1").value);
+          let y=parseInt( document.getElementById("no2").value);
+          let ans= x*y;
+          
+          let divans=document.getElementById("ans");
+           //alert("ans....."+ans);
+          
+           divans.innerHTML=ans;
+      
+        }
+        function div()
+        {
+           let x= parseInt( document.getElementById("no1").value);
+          let y=parseInt( document.getElementById("no2").value);
+          let ans= x/y;
+          
+          let divans=document.getElementById("ans");
+           //alert("ans....."+ans);
+          
+           divans.innerHTML=ans;
+      
+        }
+    </script>
+    
+</head>
+<body>
+    <form action="">
+    no:1<input type="text" id="no1">
+    <br><br>
+    no:2 <input type="text" id="no2">
+    <br><br>
+    <button type="button" onclick="add()">ADD</button>
+    <button type="button" onclick="sub()">sub</button>
+    <button type="button" onclick="mult()">mult</button>
+    <button type="button" onclick="div()">div</button>
+    
+
+ 
+    </form>
+    <br>
+    <div id="ans"></div>
+</body>
+</html>
